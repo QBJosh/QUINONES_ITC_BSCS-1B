@@ -1,0 +1,170 @@
+:root {
+  color-scheme: light;
+  --blue: #4a7bd0;
+  --blue-dark: #3a63ab;
+  --blue-light: #eaf1fc;
+  --border: #d9dfe8;
+  --text: #2f3640;
+  --muted: #6b7380;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  color: var(--text);
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.5;
+}
+
+/* ---------- Titles ---------- */
+h1 {
+  text-align: center;
+  color: var(--blue-dark);
+  font-size: 34px;
+  margin: 20px 0 8px 0;
+  padding-bottom: 12px;
+  border-bottom: 3px solid var(--blue-light);
+}
+
+h2 {
+  color: var(--blue-dark);
+  font-size: 22px;
+  margin: 0 0 6px 0;
+  padding: 10px 14px;
+  background-color: var(--blue-light);
+  border-left: 5px solid var(--blue);
+  border-radius: 4px;
+}
+
+h3 {
+  color: var(--blue-dark);
+  margin: 0 0 10px 0;
+  font-size: 16px;
+}
+
+/* ---------- Descriptions ---------- */
+section > p {
+  color: var(--muted);
+  font-size: 15px;
+  font-style: italic;
+  margin: 8px 0 16px 4px;
+}
+
+/* ---------- Navigation ---------- */
+nav {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+nav a {
+  display: inline-block;
+  margin: 4px;
+  padding: 6px 12px;
+  color: var(--blue-dark);
+  background-color: var(--blue-light);
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav a:hover {
+  background-color: var(--blue);
+  color: #ffffff;
+}
+
+section {
+  margin-bottom: 40px;
+  padding-top: 10px;
+}
+
+/* ---------- Boxes ---------- */
+.box {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 12px;
+  background-color: #fafbfd;
+}
+
+label {
+  font-size: 14px;
+  color: var(--text);
+}
+
+/* ---------- Inputs ---------- */
+input {
+  padding: 8px 10px;
+  margin: 5px 5px 10px 0;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: var(--text);
+  font-size: 14px;
+}
+
+input::placeholder {
+  color: #a0a7b3;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px var(--blue-light);
+}
+
+/* ---------- Buttons ---------- */
+button {
+  padding: 8px 16px;
+  margin: 5px 5px 5px 0;
+  border: 1px solid var(--blue);
+  border-radius: 5px;
+  background-color: var(--blue);
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--blue-dark);
+  border-color: var(--blue-dark);
+}
+
+button:active {
+  background-color: #2f5190;
+}
+
+.result {
+  margin: 10px 0 0 0;
+  font-weight: bold;
+  color: var(--blue-dark);
+}
+
+/* ---------- Table ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: var(--blue-light);
+  color: var(--blue-dark);
+}
+
+/* ---------- Footer ---------- */
+footer {
+  text-align: center;
+  font-size: 13px;
+  color: #888888;
+  border-top: 1px solid #eeeeee;
+  padding-top: 15px;
+}
